@@ -9,4 +9,4 @@ phases:
       - echo Build started on `date`
   post_build:
     commands:
-      - echo Build completed on `date`
+      - aws cp s3 index.html s3://lorenzo-demo/
